@@ -1,0 +1,104 @@
+
+<!--  CREATED BY WYTINY 2015.1.8  -->
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<title>Emissions of Carbon Dioxide of 15 main countries</title>
+<style>
+.myButton {
+	-moz-box-shadow: 0px 1px 0px 0px #f0f7fa;
+	-webkit-box-shadow: 0px 1px 0px 0px #f0f7fa;
+	box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #33bdef), color-stop(1, #019ad2));
+	background:-moz-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+	background:-webkit-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+	background:-o-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+	background:-ms-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#33bdef', endColorstr='#019ad2',GradientType=0);
+	background-color:#33bdef;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #057fd0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #019ad2), color-stop(1, #33bdef));
+	background:-moz-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+	background:-webkit-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+	background:-o-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+	background:-ms-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#019ad2', endColorstr='#33bdef',GradientType=0);
+	background-color:#019ad2;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 1400px;
+  height: 700px;
+  position: relative;
+
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+svg {
+	width: 100%;
+	height: 100%;
+}
+
+path.slice{
+	stroke-width:2px;
+}
+
+polyline{
+	opacity: .3;
+	stroke: black;
+	stroke-width: 1px;
+	fill: none;
+}
+
+div{
+	position:absolute;
+	position:absolute; 
+	width:140px; 
+	text-align:center; 
+	color:#666; 
+	z-index:-1;
+}
+
+</style>
+</head>
+<body background="a.jpg" >
+	 <a id="wytiny" style="visibility:hidden" href="http://www.wytiny.com" class="myButton">WyTiny</a>	 
+	 <!-- <a href="https://twitter.com/zjutiny" class="myButton">My Twitter</a> -->
+	 <div id="titleA" style="width:740px; left:320px;top:10px; font-size:30px" ></div>	
+	 <div id="titleB" style="width:740px; left:320px;top:50px; font-size:20px" ></div>		 
+	 <div id="cYear" style="left:320px;top:240px; font-size:45px" ></div>
+	 <div id="dataB" style="width:300px;visiblity:hidden; left:860px;top:120px; font-size:25px" ></div>
+	 <div id="total" style="left:310px;top:300px; font-size:45px; font-weight:bold" ></div>
+     <div id="info" style="visibility:hidden;left:320px; top:260px; font-size:15px" >
+     	<span id="percentage" style="font-size:2.5em"></span><br/>
+     	Carbon dioxide of the world was produced.
+        </div>
+     <div id="infoA" style="left:300px;top:570px;font-size:20px; width:200px;"></div>
+     <div id="infoB" style="left:900px; top:570px;font-size:20px; width:200px;"></div>
+<button style="visibility:hidden" id="changeYear" class="myButton">ChangeYear</button>
+<script src="d3.min.js"></script>
+<script src="graphA.js"></script>
+</body>
