@@ -99,6 +99,6 @@ div{
      <div id="infoA" style="left:300px;top:570px;font-size:20px; width:200px;"></div>
      <div id="infoB" style="left:900px; top:570px;font-size:20px; width:200px;"></div>
 <button style="visibility:hidden" id="changeYear" class="myButton">ChangeYear</button>
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="d3.min.js"></script>
 <script src="graphA.js"></script>
 </body>

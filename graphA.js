@@ -239,13 +239,20 @@ function mouseOn(d){
 		.style("visibility", "");
 
 	d3.selectAll("path")
+		.transition()
+		.duration(300)
 		.style("opacity",0.3);
+
 	d3.select(this)
+		.transition()
+		.duration(400)
 		.style("opacity",1);
 }
 
 function mouseOut(d){
 	d3.selectAll("path")
+			.transition()
+			.duration(500)
 			.style("opacity", 1);
 	d3.selectAll("text")
 	 	.style("opacity", 1);
